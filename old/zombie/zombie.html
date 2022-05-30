@@ -200,16 +200,16 @@ img.full-width {
 	  width: 100%;
   }  
   
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">var items = ["What are you doing here?", "Please Leave", "What did you expect??", "im very sad.", ":(", "I have depression", "PLEASE KILL ME", "I have brain Damage"];
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">var items = ["What are you doing here?", "Please Leave", "What did you expect??", "im very sad.", ":(", "I have depression", "PLEASE KILL ME", "I have brain Damage", "Joe Biden", "https://open.spotify.com/user/gimpyshrimpys-au?si=b1e2dfd743424fd8", "Trust me its funny ;)"];
 var item = items[Math.floor(Math.random() * items.length)];
 
 console.log(item)
 
 console.log("If you can see a script below ignore that. It is the school watching what yt clips we can see... I promise its not me spying on you ;)")
-</script><tw-passagedata pid="1" name="start.............&gt;AAAAAAAAA" tags="" position="300,0" size="100,100">yo, idc what you think of this story. kys
+</script><tw-passagedata pid="1" name="start.............&gt;AAAAAAAAA" tags="noinventory" position="300,0" size="100,100">yo, idc what you think of this story. kys
 
 (after: 4s):
-	(goto: &quot;save select&quot;)</tw-passagedata><tw-passagedata pid="2" name="save select" tags="" position="400,200" size="100,100">&lt;h1&gt;Zombie Apocalypse&lt;/h1&gt;
+	(goto: &quot;save select&quot;)</tw-passagedata><tw-passagedata pid="2" name="save select" tags="noinventory" position="400,200" size="100,100">&lt;h1&gt;Zombie Apocalypse&lt;/h1&gt;
 
 {(if: (saved-games:) contains &quot;Slot D&quot;)[(link: &quot;New Game&quot;)[(goto: &quot;true start&quot;)]]
 (else:)[(link: &quot;Start Game&quot;)[(goto: &quot;true start&quot;)]]}
@@ -218,7 +218,7 @@ console.log("If you can see a script below ignore that. It is the school watchin
 	
 	
 (link: &quot;Go back to story select&quot;)[{
-	(goto-url: &quot;/alt/stories/index.html&quot;)}]
+	(goto-url: &quot;/Twine-Stories/&quot;)}]
 [[Story Stats-&gt;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]]
 
 
@@ -232,32 +232,126 @@ console.log("If you can see a script below ignore that. It is the school watchin
 &lt;!--Header End--&gt;
 }</tw-passagedata><tw-passagedata pid="4" name="footer" tags="footer" position="200,200" size="100,100">{&lt;!--Footer Start--&gt;
 
+}
+(if: (passage:)&#39;s name is &quot;inventory&quot;) [&lt;!--NIL--&gt;] (else-if: (passage:)&#39;s tags contains &quot;noinventory&quot;) [&lt;!--NIL--&gt;] (else:)[
 
+
+Check [[Inventory]]]{
 
 &lt;!--Footer End--&gt;
 &lt;!--I want to die--&gt;
-}</tw-passagedata><tw-passagedata pid="5" name="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" tags="" position="500,0" size="100,100">i have brain damage
+}</tw-passagedata><tw-passagedata pid="5" name="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" tags="noinventory" position="500,0" size="100,100">i have brain damage
 
 (link: &quot;Go Back&quot;)[
-	(undo:)]</tw-passagedata><tw-passagedata pid="6" name="true start" tags="" position="600,200" size="100,100">Choose who&#39;s story you want to play as(after:1s)[.(after: time + 1s)[.(after: time + 1s)[.]]]
+	(undo:)]</tw-passagedata><tw-passagedata pid="6" name="true start" tags="noinventory" position="600,200" size="100,100">Choose who&#39;s story you want to play as(after:1s)[.(after: time + 1s)[.(after: time + 1s)[.]]]
 
 (after: 4s)[&lt;span class=&quot;pulse-in&quot;&gt;(link: &quot;Play as a Survivor&quot;)[(goto: &quot;serve the rusiia&quot;)]&lt;/span&gt;]
 {&lt;!--Coming Soon--&gt;
 }(hidden:)[(after: 5s)[&lt;span class=&quot;pulse-in&quot;&gt;[[Play as a Zombie-&gt;Suicide is sometimes the answer especially when you have the big sad, it is an easy way to longer feel anything as usually suicide is instant, unless you want to fell the pain.]]&lt;/span&gt;]]
-(hidden:)[(after: 6s)[&lt;span class=&quot;pulse-in&quot;&gt;[[Play as a scientist-&gt;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa please kill me]]&lt;/span&gt;]]</tw-passagedata><tw-passagedata pid="7" name="serve the rusiia" tags="" position="800,200" size="100,100">Enter a name
+(hidden:)[(after: 6s)[&lt;span class=&quot;pulse-in&quot;&gt;[[Play as a scientist-&gt;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa please kill me]]&lt;/span&gt;]]</tw-passagedata><tw-passagedata pid="7" name="serve the rusiia" tags="noinventory" position="800,200" size="100,100">Enter a name
 
 (input-box:2bind $name,&quot;=XX=&quot;,1)
 
-(live: 0.1s)[(if: (str:$name)&#39;s length is &gt; 2)[[[Next-&gt;Stowy sterto]]]]</tw-passagedata><tw-passagedata pid="8" name="Admin" tags="" position="400,350" size="100,100">(input-box:2bind $admincode,&quot;=XX=&quot;,1)
+(live: 0.1s)[(if: (str:$name)&#39;s length is &gt; 2)[[[Next-&gt;Stowy sterto]]]]</tw-passagedata><tw-passagedata pid="8" name="Admin" tags="noinventory" position="400,350" size="100,100">(input-box:2bind $admincode,&quot;=XX=&quot;,1)
 
 (if: $admincode is &quot;pippins&quot;)[(link: &quot;Become an Admin&quot;)[(set: $admin to true)(goto: &quot;save select&quot;)]]
 
-[[back-&gt;save select]]</tw-passagedata><tw-passagedata pid="9" name="Suicide is sometimes the answer especially when you have the big sad, it is an easy way to longer feel anything as usually suicide is instant, unless you want to fell the pain." tags="" position="600,350" size="100,100"></tw-passagedata><tw-passagedata pid="10" name="startup" tags="startup" position="200,300" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa please kill me" tags="" position="700,350" size="100,100"></tw-passagedata><tw-passagedata pid="12" name="Stowy sterto" tags="" position="1000,400" size="100,100">You are $name a survivor of the plague which is taking control over peoples brains. The only thing the plague wants is, is to control over every living thing other than plants. The only way to get infected is to inhale the spores that the plague creates (they are not everywhere). But if a plague controlled person catches you, you will most likely die.
+[[back-&gt;save select]]</tw-passagedata><tw-passagedata pid="9" name="Suicide is sometimes the answer especially when you have the big sad, it is an easy way to longer feel anything as usually suicide is instant, unless you want to fell the pain." tags="noinventory" position="600,350" size="100,100"></tw-passagedata><tw-passagedata pid="10" name="startup" tags="startup" position="200,300" size="100,100">(set: $inv to (a:))
+(set: $hungry to true)
+(set: $hurting to false)</tw-passagedata><tw-passagedata pid="11" name="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa please kill me" tags="noinventory" position="700,350" size="100,100"></tw-passagedata><tw-passagedata pid="12" name="Stowy sterto" tags="noinventory" position="1000,400" size="100,100">You are $name a survivor of the plague which is taking control over peoples brains. The only thing the plague wants is, is to control over every living thing other than plants. The only way to get infected is to inhale the spores that the plague creates (they are not everywhere). But if a plague controlled person catches you, you will most likely die.
 
 You have been walking around the wasteland for a week and you are starting to get hungry, you are in a small town.
 
 [[Enter a house]]
-[[Keep walking]]</tw-passagedata><tw-passagedata pid="13" name="Enter a house" tags="" position="925,550" size="100,100">(set: _event to (random: 1, 3))(if: _event is not 1)[]</tw-passagedata><tw-passagedata pid="14" name="Keep walking" tags="" position="1075,550" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[Keep walking]]</tw-passagedata><tw-passagedata pid="13" name="Enter a house" tags="" position="925,550" size="100,100">(set: _event to (random: 1, 3))(if: _event is not 1)[You enter the house
+
+|event&gt;[]
+
+(link: &quot;Search the House&quot;)[{(set: _event2 to (random: 1, 2))(if: _event2 is 1)[(replace: ?event)[You search the house and you find some food. (set: $inv to it + (a: &quot;Food&quot;))]]
+(else-if: _event2 is 2)[(replace: ?event)[You found a small kitchen knife (set: $inv to it + (a: &quot;Small Knife&quot;))]]}]
+[[Exit the House-&gt;Keep walking]]]
+
+(else:)[You enter the house and it is swarming with the infected
+
+|event2&gt;[]
+
+(link: &quot;Quickily exit the house&quot;)[(set: _event3 to (random: 1, 2))(if: _event3 is 1)[(goto: &quot;interaaaerhdkmdfjd&quot;)]](else:)[You attempt to escape the house and you fail and die.]]</tw-passagedata><tw-passagedata pid="14" name="Keep walking" tags="" position="1075,550" size="100,100">(after: 0.1s)[(if: $hungry is true)[(replace: ?event69)[You are hungry]](else:)[(replace: ?event69)[You are well fed, and ready to take on the world.]]]
+
+|event69&gt;[&lt;!--a--&gt;]
+
+(after: 2s)[(set: _event to (random: 1, 2))
+(if: _event is 1)[(replace: ?event69)[You keep on walking until you see a large zombie horde. Fighting them hungry and without a weapon might be difficult.
+
+(link: &quot;Fight them&quot;)[(if: $hungry is false)[(replace: ?event69)[You fight the zombies are until you had become exhausted.
+
+(link: &quot;Loot them&quot;)[(replace: ?event69)[You loot all the zombies and with the clothing you found, you can create something(set: $inv to it + (a: &quot;Clothing&quot;))]]]]
+
+(else:)[(set: _event2 to (random: 1, 2))(if: _event2 is 1)[(if: $inv contains &quot;Small Knife&quot;)[You stab all the zombies with your knife.
+
+(link: &quot;Loot them&quot;)[(replace: ?event69)[You loot all the zombies and with the clothing you found, you can create something(set: $inv to it + (a: &quot;Clothing&quot;))(set: $inv to it + (a: &quot;Food&quot;))]]]](else:)[(replace: ?event69)[You attempt to fight the zombies but you failed.
+
+(link: &quot;Next&quot;)[(goto: &quot;death&quot;)]]]
+(else:)[(replace: ?event69)[You fight the zombies are until you had become exhausted.
+
+(link: &quot;Loot them&quot;)[(replace: ?event69)[You loot all the zombies and with the clothing you found, you can create something(set: $inv to it + (a: &quot;Clothing&quot;))]]]]]]]]
+
+(else:)[(replace: ?event69)[You walk around until you find a large rundown hospital
+
+[[Go into the hospital-&gt;Hospital go brrrrr]]
+
+[[Don&#39;t go into the Hospital-&gt;*Sadness sounds*]]]]]
+
+
+</tw-passagedata><tw-passagedata pid="15" name="Inventory" tags="noinventory" position="600,600" size="100,100">(if: $inv&#39;s length is &gt; 0)[Your inventory contains (print: $inv)]
+(click: &quot;Food&quot;)[(display: &quot;food&quot;)](click: &quot;Small Knife&quot;)[(display: &quot;small knife&quot;)](click: &quot;Clothing&quot;)[(display: &quot;cloth&quot;)](click: &quot;Strips of Cloth&quot;)[(display: &quot;strips&quot;)](click: &quot;Bandage&quot;)[(display: &quot;bandage&quot;)]
+
+(else:)[Your Inventory is empty]
+
+(link-goto: &quot;Return&quot;, (history:)&#39;s last)
+
+&lt;!--WTFFFFFF i just want to die--&gt;</tw-passagedata><tw-passagedata pid="16" name="food" tags="" position="700,700" size="100,100">|foods&gt;[Some basic Food that you can eat.]
+
+(link: &quot;Eat the food&quot;)[(set: $inv to it - (a: &quot;Food&quot;))(set: $hungry to false)(replace: ?foods)[&lt;!--NIL--&gt;]]</tw-passagedata><tw-passagedata pid="17" name="small knife" tags="" position="600,700" size="100,100">A small knife for shanking gronks</tw-passagedata><tw-passagedata pid="18" name="interaaaerhdkmdfjd" tags="" position="925,650" size="100,100">You quickily exit the house and you keep on moving on the street.
+
+(after: 3s)[(goto: &quot;Keep walking&quot;)]</tw-passagedata><tw-passagedata pid="19" name="death" tags="" position="198,484" size="100,100">you died idot.
+
+(after: 2s)[(goto: &quot;save select&quot;)]</tw-passagedata><tw-passagedata pid="20" name="cloth" tags="" position="493,908" size="100,100">|cloth&gt;[Some old bloody clothing.]
+
+(link: &quot;Tear them up&quot;)[(set: $inv to it - (a: &quot;Clothing&quot;))(set: $inv to it + (a: &quot;Strips of Cloth&quot;))(replace: ?cloth)[&lt;!--NIL--&gt;](goto: &quot;Inventory&quot;)]
+
+
+
+
+&lt;!--Kill me please--&gt;</tw-passagedata><tw-passagedata pid="21" name="strips" tags="" position="596,907" size="100,100">|strips&gt;[Strips of bloody old clothing can be used to make bandages]
+
+(link: &quot;Make a bandage&quot;)[(set: $inv to it - (a: &quot;Strips of Cloth&quot;))(set: $inv to it + (a: &quot;Bandage&quot;))(replace: ?strips)[&lt;!--NIL--&gt;](goto: &quot;Inventory&quot;)]
+
+
+
+
+&lt;!--Kill me please--&gt;</tw-passagedata><tw-passagedata pid="22" name="bandage" tags="" position="699,907" size="100,100">|bandage&gt;[A bandage you can use to heal yourself]
+
+{(if: $hurting is false)[You are not currently hurt]
+(else:)[You are hurt]}
+
+(link: &quot;Use the bandage&quot;)[(set: $inv to it - (a: &quot;Bandage&quot;))(replace: ?bandage)[&lt;!--NIL--&gt;](set: $hurting to false)(goto: &quot;Inventory&quot;)]</tw-passagedata><tw-passagedata pid="23" name="Hospital go brrrrr" tags="" position="1045,700" size="100,100">You enter the hospital.
+
+(after: 1s)[&lt;span class=&quot;pulse-in&quot;&gt;You begin to look around as you see hospital equipment scattered around the narrow corridors.&lt;/span&gt;
+
+(after: time + 2s)[&lt;span class=&quot;pulse-in&quot;&gt;You keep on walking until you begin to feel uneasy. You look around until you begin to hear banging in the room infront of you..&lt;/span&gt;
+
+[[Investigate the sounds-&gt;JOE BIDEN]]
+
+[[Find some items and leave-&gt;JOE BIDEENNE]]
+
+[[Leave as quick as possible-&gt;eeeeeeeerrrrrrrrerrrrrrrrrreeeeeeerrrrrrr]]]]</tw-passagedata><tw-passagedata pid="24" name="*Sadness sounds*" tags="" position="1304,697" size="100,100">{(if: $inv contains &quot;Food&quot;)[(set: $inv to it - (a: &quot;Food&quot;))Coming Soon]
+(else-if: $hungry is false)[Coming soon]
+}(else:)[You are too hungry to move...
+
+[[Next-&gt;death]]]</tw-passagedata><tw-passagedata pid="25" name="JOE BIDEN" tags="" position="895,850" size="100,100">coming soon</tw-passagedata><tw-passagedata pid="26" name="JOE BIDEENNE" tags="" position="1045,850" size="100,100">{(set: _event to (random: 1, 2))
+}(if: _event is 1)[(set: _JoeBiden to (random: 1, 2))(if: _JoeBiden is 1)[You quickily scavenge around and found some food and then left.
+
+[[Next-&gt;eeeeeeeerrrrrrrrerrrrrrrrrreeeeeeerrrrrrr]]]]</tw-passagedata><tw-passagedata pid="27" name="eeeeeeeerrrrrrrrerrrrrrrrrreeeeeeerrrrrrr" tags="" position="1195,850" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
